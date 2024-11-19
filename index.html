@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Islami Icon</title>
+</head>
+<body>
+<h1 class="main Logo"> ইসলামিক আইকন</h1>
+  <div class="container">
+    <!-- Box 1 -->
+    <div class="box" onclick="showDetails(1)">
+      <img src="quran.png" alt="Logo 1" class="box-logo">
+      <h3 class="box-title">কোরআন শরীফ</h3>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="box" onclick="showDetails(2)">
+      <img src="hadis.png" alt="Logo 2" class="box-logo">
+      <h3 class="box-title">আল হাদিস</h3>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="box" onclick="showDetails(3)">
+      <img src="gojol.png" alt="Logo 3" class="box-logo">
+      <h3 class="box-title">ইসলামিক গজল</h3>
+    </div>
+
+    <!-- Box 4 -->
+    <div class="box" onclick="showDetails(4)">
+      <img src="namaz.png" alt="Logo 4" class="box-logo">
+      <h3 class="box-title">নামাজের সময়সূচি</h3>
+    </div>
+  </div>
+
+  <!-- Details Section -->
+  <div id="details" class="details hidden">
+    <h3 id="details-title">Details</h3>
+    <p
+    id="details-content">Click on a box to see more information.</p>
+  </div>
+
+  <script>
+    function showDetails(boxNumber) {
+      const detailsContent = document.getElementById("details-content");
+      const detailsTitle = document.getElementById("details-title");
+
+      detailsTitle.innerText = `Box ${boxNumber} Details`;
+
+      if (boxNumber === 1) {
+        detailsContent.innerHTML = `
+          <p>কোরআন শরীফ অনুবাদ সহ(PDF):</p>
+          <a href="quran.pdf" target="_blank"> Read PDF </a>
+          <p>কোরআন শরীফ উচ্চারণ সহ(PDF):</p>
+          <a href="কোরআন শরীফ উচ্চারণ সহ.pdf" target="_blank"> Read PDF </a>
+        `;
+      } else if (boxNumber === 2) {
+        detailsContent.innerHTML = `
+          <p>আল হাদিস (PDF):</p>
+          <a href="hadis1.pdf" target="_blank">Read PDF</a>
+          <p>বুখারী শরীফ-1 (PDF):</p>
+          <a href="Bukhari Part-1.pdf" target="_blank">Read PDF</a>
+          <p>বুখারী শরীফ-2 (PDF):</p>
+          <a href="Bukhari Part-2.pdf" target="_blank">Read PDF</a>
+          <p>বুখারী শরীফ-3 (PDF):</p>
+          <a href="Bukhari Part-3.pdf" target="_blank">Read PDF</a>
+           <p>বুখারী শরীফ-4 (PDF):</p>
+          <a href="Bukhari Part-4.pdf" target="_blank">Read PDF</a>
+          <p>বুখারী শরীফ-5 (PDF):</p>
+          <a href="Bukhari Part-5.pdf" target="_blank">Read PDF</a>
+          <p>বুখারী শরীফ-6 (PDF):</p>
+          <a href="Bukhari Part-6.pdf" target="_blank">Read PDF</a>
+        `;
+      } else if (boxNumber === 3) {
+        detailsContent.innerHTML = `
+          <p>ইসলামিক গজল (ভিডিও):</p>
+          <video controls width="300">
+            <source src="gojol1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video controls width="300">
+            <source src="এতিম.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video controls width="300">
+            <source src="Ghum Jodi.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video controls width="300">
+            <source src="Meherban Tumi.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video controls width="300">
+            <source src="ফাতেমার নয়ন.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video controls width="300">
+            <source src="তুমি যষ্টি মুকুল.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video controls width="300">
+            <source src="মোরা যদি ডানা.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video controls width="300">
+            <source src="বুলবুলি.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video controls width="300">
+            <source src="ত্রিভুবনের প্রিয় মুহাম্মদ.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video controls width="300">
+            <source src="দেখিনি তোমায়.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video controls width="300">
+            <source src="হৃদয় উজাড় করে.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video controls width="300">
+            <source src="মেহমান .mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video controls width="300">
+            <source src="মিছে জীবন.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+           <video controls width="300">
+            <source src="Most Beautiful Naat.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video controls width="300">
+            <source src="আল্লাহ্_.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video controls width="300">
+            <source src="Ami Chaina Bachte - Kalarab.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video controls width="300">
+            <source src="Usaid Zahid Siddique .mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video controls width="300">
+            <source src="হালাল প্রেমের রোমান্টিক গজল .mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        `;
+        
+      } else if (boxNumber === 4) {
+        const currentTime = new Date().toLocaleTimeString();
+        detailsContent.innerHTML = `
+          <p>নামাজের সময়সূচি:</p>
+          <p>বর্তমান সময়: ${currentTime}</p>
+        `;
+      }
+
+      document.getElementById("details").classList.remove("hidden");
+    }
+  </script>
+</body>
+</html>

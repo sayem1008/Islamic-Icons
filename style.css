@@ -1,0 +1,75 @@
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ead9a7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* Container for Boxes */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 boxes per row */
+  gap: 20px; /* Space between boxes */
+  margin-top: 20px;
+}
+
+/* Box Styling */
+.box {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #820404;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.1); /* Scale on hover */
+}
+
+.box-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.box-title {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Details Section */
+.details {
+  margin-top: 20px;
+  padding: 15px;
+  width: 300px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+video{
+  max-width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
